@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <HBox>
+         <children>
+            <Label text="Application Version: " />
+            <Label fx:id="version" />
+         </children>
+      </HBox>
+      <Label text="Thomas Anderson (s3838831)" />
+      <HBox alignment="TOP_RIGHT">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#close" text="Close" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
